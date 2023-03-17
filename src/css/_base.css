@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primary: #000;
+    --corTexts: #ffffff;
+    --corLinks: antiquewhite;
+    --corBtn: #7e8b32;
+    --corBackground: linear-gradient(260deg, #9c1abc 0, #7815aa 25%, #530e94 50%, #2c077d 75%, #000468 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-image: var(--corBackground);
+
+}
+body {
+    margin: 0;
+    padding-top: 7.75rem;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.logo-infografica {
+    height: 80px;
+    position: absolute; 
+    top: 1.5rem ;
+    left: 0vw;    
+ }

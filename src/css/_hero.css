@@ -1,0 +1,36 @@
+.hero{
+    position: relative;
+    height: 34.625rem;
+    border: 1px solid var(--corTexts);
+}
+.hero__background{
+    z-index: -1; 
+    position: absolute;
+    object-fit: contain;
+    object-position: center;
+    
+}
+.hero__container{
+    position: relative;
+    height: 100%;
+}
+.hero__copy{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.hero__copy h2{
+    margin: 0;
+    margin-bottom: 3rem;
+    font-size: 7.5rem;
+    line-height: 7.5rem;
+    letter-spacing: -0.3125rem;
+    color: var(--corTexts);
+}
+.hero__copy p{
+    margin: 0;
+    font-size: 0.9375rem;
+    line-height: 1.875rem;
+    color: red;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color:var(--cor-primary); 
+}
