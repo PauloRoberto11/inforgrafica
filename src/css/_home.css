@@ -4,11 +4,11 @@
     font-family: "Roboto", sans-serif;
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color:var(--cor-primary); 
-
+    
 }
 .slide{
     position: relative;
-    height: calc(90vh - 7.75rem);
+    height: calc(95vh - 7.75rem);  
 }
 
 .slide__background-image{
@@ -21,24 +21,24 @@
 }
 .slide__copy{
     position: absolute;
-    top: 7.5rem ;
-    left: 38vw;
+    top: 3rem ;
+    left: 57.5vw;
 }
 
 .slide__copy h6 {
   
-    font-size:1.55rem;
+    font-size:1rem;
     margin-right: 400;
     text-transform: uppercase;
     letter-spacing: 0.10875rem;
 }
 .slide__copy h2 {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 3rem;
+    line-height: 3rem;
     text-transform: uppercase;
 }
 #counter{
-    background-color: #a7c20e;
+    background-color: var(--corMain);
     color: #000000;
     text-transform: uppercase;
        
@@ -59,9 +59,9 @@
 
 }
 .institutional{
-    background-color: var(--corBackgroundPrimary);
+    background-color: var(--corBackground);
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 530px;
     gap: 3.125rem;
     align-items: center;
     padding: 4.375rem;
@@ -71,25 +71,26 @@
 
 }
 .institutional__copy{
-    padding: 0 1.875rem 0 0;
+    padding: 0 0.875rem 0 0;
 }
 .institutional__copy h6{
     font-size: 0.875rem;
     font-weight: 300;
     color: var(--corTexts);
-    letter-spacing: 0.1rem;
+    letter-spacing: 0rem;
     text-transform: uppercase;
     margin: 0;
 }
 .institutional__copy h4{
     font-size: 1.5625rem;
     margin-top: 1rem;
-    color: var(--corBtn);
+    color: var(--corMain);
+    text-transform: uppercase;
 }   
 .institutional p{
     font-family: "Roboto", sans-serif;
     font-size: 1.0625rem;
-    line-height: 1.6875rem;
+    line-height: 1.5875rem;
     margin-bottom: 2.5rem;
     color:var(--corTexts);
 }
@@ -100,9 +101,6 @@
     background-size: cover;
     background-position: center;
 }
-.quote--primary{
-    color: var(--corBtn);
- }
 .quote__container{
     display: grid;
     align-items: center;
@@ -110,7 +108,7 @@
     min-height: 88vh;
 }
 .quote__copy{
-    background: #e4dede;
+    background: var(--corLinks);
     padding: 5.625rem 3.375rem;
 }
 .quote__copy h6{

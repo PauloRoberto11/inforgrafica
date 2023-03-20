@@ -1,5 +1,6 @@
 .navbar{
     position: fixed;
+    z-index: 1;
     display: grid;
     grid-template-columns: 1fr 7fr;
     align-items: center;
@@ -7,16 +8,14 @@
     left: 0;
 
     width: 100vw;
+    padding: 2.5rem 2rem;  
     height: 7.75rem;
-    padding: 0rem;
-
-    background-color:var(--corBackground);
+   
+    background-color:  var(--corBtn);
     color: var(--corTexts);
 }
 .navbar__links{
-
     justify-self: end;
-
 }
 .navbar__links li {
     font-size: 0.875rem;
@@ -30,5 +29,5 @@
 }
 
 .navbar__links a:hover {
-   color: #a7c20e
+   color: var(--corMain);
 }

@@ -4,9 +4,10 @@
 
 :root {
     --cor-primary: #000;
+    --corMain: #fceb00;
     --corTexts: #ffffff;
     --corLinks: antiquewhite;
-    --corBtn: #7e8b32;
+    --corBtn:#57297e;
     --corBackground: linear-gradient(260deg, #9c1abc 0, #7815aa 25%, #530e94 50%, #2c077d 75%, #000468 100%);
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -31,5 +32,5 @@ ul{
     height: 80px;
     position: absolute; 
     top: 1.5rem ;
-    left: 0vw;    
+    left: 1vw;    
  }

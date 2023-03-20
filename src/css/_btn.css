@@ -1,9 +1,27 @@
+.btn--slide{ 
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    border: 0.125rem solid var(--corTexts);
+    border-radius: 2rem;
+    color: var(corBtn);
+    background: var(--corTexts);
+    font-size: 0.8375rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s all ease;
+}
+.btn--slide:hover{
+    color: var(--cor-primary);
+    border-color: var(--corTexts);
+    background-color: var(--corMain);
+    box-shadow: 0 1rem 1rem #0009; 
+}
 .btn{
     cursor: pointer;
     padding: 1rem 1.5rem;
-    border: 0.125rem solid  #57297e;
+    border: 0.125rem solid  var(--corBtn);
     border-radius: 2rem;
-    color: #57297e;
+    color: var(--corBtn);
     background: var(--corTexts);
     font-size: 0.8375rem;
     font-weight: 600;
@@ -13,25 +31,25 @@
 }
 .btn:hover{
     border-color:var(--corTexts);
-    background-color:#57297e;;
+    background-color: var(--corbtn);
     color: var(--corTexts);
     box-shadow: 0 1rem 1rem var(--corTexts);
 }
 .btn--quote{ 
     cursor: pointer;
     padding: 1rem 1.5rem;
-    border: 0.125rem solid  var(--corBtn);;
+    border: 0.125rem solid  var(--corMain);;
     border-radius: 2rem;
-    color: var(--corBtn);
-    background: unset;
+    color: var(--cor-primary);
+    background: var(--corMain);
     font-size: 0.8375rem;
     font-weight: 600;
     text-transform: uppercase;
     transition: 0.3s all ease;
 }
 .btn--quote:hover{
-    color: #fff;
-    border-color: var(--corBtn);
-    background-color: var(--corBtn);
-    box-shadow: 0 1rem 1rem #0007; 
+    color: #58515e;
+    border-color: var(--cor-primary);
+    background-color: unset;
+    box-shadow: 0 1rem 1rem #0005; 
 }

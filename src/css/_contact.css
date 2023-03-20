@@ -1,7 +1,7 @@
 .contact{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    color: var(--corBtn);
+    color: var(--corMain);
 }
 .contact h3{
     margin: 0;
@@ -13,11 +13,11 @@
 }
 .contact__info,
 .contact__form{
-    padding: 4rem 0;
+    padding: 2.5rem 0;
 }
 .contact__info i{
     font-size: 1.5rem;
-    color: var(--corBtn);
+    color: var(--corMain);
 }
 .contact__info span{
     display: grid;
@@ -26,7 +26,7 @@
     align-items: center;
     font-family: "Roboto";
     font-weight: 700;
-    line-height: 1.6875rem;
+    line-height: 1.9875rem;
     color: var(--corTexts);
 }
 .contact__info__container,
@@ -41,8 +41,8 @@
     padding-left: 7.125rem;
 }
 .contact__form{
-    background-color: var(--corBtn);
-    color: var(--corTexts);
+    background-color: var(--corMain);
+    color: var(--cor-primary);
 }
 .contact__form label{
     font-weight: 700;

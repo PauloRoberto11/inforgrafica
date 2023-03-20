@@ -1,12 +1,12 @@
 .hero{
     position: relative;
-    height: 34.625rem;
-    border: 1px solid var(--corTexts);
+    height: 36.625rem;
+    border: 3px solid var(--corTexts);
 }
 .hero__background{
     z-index: -1; 
     position: absolute;
-    object-fit: contain;
+    object-fit: fill;
     object-position: center;
     
 }
@@ -30,7 +30,7 @@
     margin: 0;
     font-size: 0.9375rem;
     line-height: 1.875rem;
-    color: red;
+    color: var(--corMain);
     -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color:var(--cor-primary); 
 }
