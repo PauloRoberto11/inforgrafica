@@ -1,15 +1,15 @@
 .hero{
     position: relative;
-    height: 36.625rem;
+    height: 34.625rem;
     border: 3px solid var(--corTexts);
 }
 .hero__background{
-    z-index: -1; 
     position: absolute;
-    object-fit: fill;
+    z-index: -1; 
+    object-fit: contain;
     object-position: center;
-    
 }
+
 .hero__container{
     position: relative;
     height: 100%;

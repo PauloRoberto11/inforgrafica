@@ -1,23 +1,20 @@
 #slider{
-    background-color: var(--corTexts);
+    background-color: var(--corBackground);
     color: var(--corTexts);
     font-family: "Roboto", sans-serif;
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color:var(--cor-primary); 
-    
 }
 .slide{
     position: relative;
-    height: calc(95vh - 7.75rem);  
+    height: 95vh;  
 }
 
 .slide__background-image{
-  
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     object-position: center;
-
 }
 .slide__copy{
     position: absolute;

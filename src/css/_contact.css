@@ -13,7 +13,7 @@
 }
 .contact__info,
 .contact__form{
-    padding: 2.5rem 0;
+    padding: 4rem 0;
 }
 .contact__info i{
     font-size: 1.5rem;
@@ -30,17 +30,20 @@
     color: var(--corTexts);
 }
 .contact__info__container,
-.contact__form_container{
+.contact__form__container{
     width: 540px;
 }
 .contact__info__container{
     float: right;
     padding-right: 7.125rem;
 }
-.contact__form_container{
-    padding-left: 7.125rem;
+.contact__form__container{
+    float: left; 
+    padding-left: 7.125rem;   
+     
 }
 .contact__form{
+    
     background-color: var(--corMain);
     color: var(--cor-primary);
 }
@@ -62,6 +65,7 @@
 }
 .contact__form button{
     float: right;
+   
 }
 .maps,
 .maps iframe{
