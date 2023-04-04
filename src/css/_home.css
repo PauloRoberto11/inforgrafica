@@ -1,13 +1,47 @@
-#slider{
+.slider{
     background-color: var(--corBackground);
     color: var(--corTexts);
     font-family: "Roboto", sans-serif;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color:var(--cor-primary); 
+   
 }
+.slider__prev-arrow,
+.slider__next-arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 5px solid #fff;
+  border-right: unset;
+  border-bottom: unset;
+  opacity: 0.9;
+}
+.slider__prev-arrow {
+    z-index: 1;
+    left: 1rem;
+    transform: rotate(-45deg);
+  }
+  
+  .slider__next-arrow {
+    right: 1rem;
+    transform: rotate(135deg);
+  }
+  
+  .slider__prev-arrow::before,
+  .slider__next-arrow::before {
+    content: "";
+  }
+  
+  .slick-arrow {
+    visibility: hidden;
+  }
+  
+  @media screen and (min-width: 1380px) {
+    .slick-arrow {
+      visibility: visible;
+    }
+  }
+  
 .slide{
     position: relative;
-    height: 95vh;  
+    height: 85vh;  
 }
 
 .slide__background-image{
@@ -16,36 +50,82 @@
     object-fit: fill;
     object-position: center;
 }
-.slide__copy{
+/* Mobile */
+.slide__copy {
+    margin-top: -10vh;
+    padding-left: 92vh;
     position: absolute;
-    top: 3rem ;
-    left: 57.5vw;
-}
-
-.slide__copy h6 {
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: start;
+    align-items: center;
+    text-align: unset;
+  }
+  .slide__copy span {
+    display: block;
+  }
   
-    font-size:1rem;
-    margin-right: 400;
+  /* Desktop */
+@media screen and (min-width: 1380px) {
+    .slide__copy {
+      margin-top: -7vh;
+      padding-left: 112vh;
+    }
+}  
+.slide__copy span {
+    display: inline;
+ }
+.slide__copy h6 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 0;
+    margin-top: -20vh;
     text-transform: uppercase;
-    letter-spacing: 0.10875rem;
+    letter-spacing: 0.20875rem;
+}
+@media screen and (min-width: 1380px) {
+  .slide__copy h6 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+    margin-top: -28vh;
+    margin-bottom: 11vh;
+    text-transform: uppercase;
+    letter-spacing: 0.20875rem;
+  }
 }
 .slide__copy h2 {
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 3.2rem;
+    line-height: 1.3rem;
+    margin-bottom: 3vw;
     text-transform: uppercase;
+    
+}
+@media screen and (min-width: 1380px) {
+    .slide__copy h2 {
+      font-size: 4rem;
+      line-height: 1.8rem;
+      margin-bottom: 4vw;
+      text-transform: uppercase;
+    }
+}
+.slide__copy h2 span {
+    display: block;
 }
 #counter{
-    background-color: var(--corMain);
+    background-color: var(--corMain);  
     color: #000000;
-    text-transform: uppercase;
-       
+    text-transform: uppercase;   
 }
 .counter__container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     place-items: center;
-    padding: 4.375rem 1rem;
-    
+    padding: 4.375rem 0;
+    text-align: center;
 }
 .counter__container h3{
     font-size: 2.185rem;
@@ -55,35 +135,64 @@
     font-size: 1.25rem;
 
 }
-.institutional{
+/* Mobile */
+.institutional {
     background-color: var(--corBackground);
     display: grid;
-    grid-template-columns: auto 530px;
-    gap: 3.125rem;
+    grid-template-columns: 1fr 480px;
+    grid-template-rows: auto auto;
+    gap: 2.125rem;
     align-items: center;
     padding: 4.375rem;
 }
+/* Desktop */
+@media screen and (min-width: 1380px) {
+    .institutional {
+      grid-template-columns: auto 580px;
+      padding: 4.375rem;
+    }
+}
 .institutional__image{
     max-width: 550px;
-
 }
-.institutional__copy{
-    padding: 0 0.875rem 0 0;
-}
+@media screen and (min-width: 1380px) {
+    .institutional__image {
+      max-width: 550px;
+    }
+}  
+/* mobile */
+.institutional__copy {
+    padding: 0 1rem 1.875rem 1rem; 
+} 
+/* Desktop */
+@media screen and (min-width: 1380px) {
+    .institutional__copy {
+      padding: 0rem 1.875rem;
+      
+    }
+} 
 .institutional__copy h6{
     font-size: 0.875rem;
     font-weight: 300;
     color: var(--corTexts);
-    letter-spacing: 0rem;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
     margin: 0;
 }
 .institutional__copy h4{
-    font-size: 1.5625rem;
+    font-size: 1.4125rem;
     margin-top: 1rem;
     color: var(--corMain);
     text-transform: uppercase;
 }   
+@media screen and (min-width: 1380px) {
+  .institutional__copy h4{
+    font-size: 1.5625rem;
+    margin-top: 1rem;
+    color: var(--corMain);
+    text-transform: uppercase;
+  }
+}
 .institutional p{
     font-family: "Roboto", sans-serif;
     font-size: 1.0625rem;
@@ -91,25 +200,46 @@
     margin-bottom: 2.5rem;
     color:var(--corTexts);
 }
-.quote{
+/* mobile */
+.quote {
     background-image: url(../images/parallax.png);
-    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+    background-size: auto 40%;
+    background-position: 40% top;
+  }
+/* desktop */
+  @media screen and (min-width: 720px) {
+    .quote {
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+  }
 .quote__container{
     display: grid;
     align-items: center;
     justify-items: end;
     min-height: 88vh;
 }
+@media screen and (min-width: 720px) {
+    .quote__container {
+      align-items: center;
+      
+    }
+}
 .quote__copy{
     background: var(--corLinks);
-    padding: 5.625rem 3.375rem;
+    padding: 3.625rem 0rem 3rem 3rem;
+    
 }
+@media screen and (min-width: 1380px) {
+    .quote__copy {
+      padding: 5.625rem 4.375rem;
+    }
+}
+  
 .quote__copy h6{
-    font-size: 0.9375rem;
+    font-size: 0.8975rem;
     font-weight: 400;
     letter-spacing: 0.1875rem;
     line-height: 1.4375rem;
@@ -118,11 +248,24 @@
     max-width: 53ch;
 }
 .quote__copy h2{
-    font-size: 4rem;
+    font-size: 4.5rem;
     line-height: 3.5rem;
     text-transform: uppercase;
+    letter-spacing: -0.1875rem;
     margin: 1.875rem 0;
 }
 .quote__copy h2 span{
     display: block;
 }
+@media screen and (min-width: 1380px) {
+    .quote__copy h6 {
+      font-size: 0.9375rem;
+    }
+  
+    .quote__copy h2 {
+      font-size: 5rem;
+      line-height: 4.3rem;
+      margin: 3.875rem 0;
+    }
+  }
+  

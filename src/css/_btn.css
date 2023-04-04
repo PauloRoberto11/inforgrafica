@@ -1,20 +1,23 @@
 .btn--slide{ 
     cursor: pointer;
-    padding: 1rem 1.5rem;
-    border: 0.125rem solid var(--corTexts);
+    padding: 0.7rem 1rem;
+    border: 0.125rem solid var(--corMain);
     border-radius: 2rem;
-    color: var(corBtn);
-    background: var(--corTexts);
-    font-size: 0.8375rem;
+    color: var(--corBtn);
+    background: var(--corMain);
+    font-size: 0.6375rem;
     font-weight: 600;
     text-transform: uppercase;
     transition: 0.3s all ease;
+   
 }
-.btn--slide:hover{
-    color: var(--cor-primary);
+.btn--slide:hover,
+.btn:active,
+.btn:focus {
+    color: var(--corlinks);
     border-color: var(--corTexts);
-    background-color: var(--corMain);
-    box-shadow: 0 1rem 1rem #0009; 
+    background: unset;
+    box-shadow: 0 1rem 1rem var(--corTexts); 
 }
 .btn{
     cursor: pointer;
@@ -29,12 +32,26 @@
     transition: 0.3s all ease;
 
 }
-.btn:hover{
+.btn:hover,
+.btn:active,
+.btn:focus {
     border-color:var(--corTexts);
     background-color: var(--corbtn);
     color: var(--corTexts);
     box-shadow: 0 1rem 1rem var(--corTexts);
 }
+.btn--slide,
+.btn--quote{
+    display: block;
+    margin: 0 auto;
+}
+@media screen and (min-width: 1380px) {
+    /* .btn--slide, */
+    .btn--quote {
+      display: inline;
+    }
+  }
+  
 .btn--quote{ 
     cursor: pointer;
     padding: 1rem 1.5rem;
@@ -47,7 +64,9 @@
     text-transform: uppercase;
     transition: 0.3s all ease;
 }
-.btn--quote:hover{
+.btn--quote:hover,
+.btn:active,
+.btn:focus {
     color: #58515e;
     border-color: var(--cor-primary);
     background-color: unset;

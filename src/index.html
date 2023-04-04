@@ -4,61 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INFOGrafica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" href="style.css">
+    <title>INFOGrafica</title>
 </head>
 
 <body>
     <nav class="navbar">
-      <h1> <img class="logo-infografica" src="./images/logo.png" /> 
-            <a href="./index.html"></a>
-      </h1>
+        <div class="container navbar__container">
+            <h1> <img class="logo-infografica" src="./images/logo.png" /> 
+                 <a href="./index.html"></a>
+            </h1>
 
-        <ul class="navbar__links">
-            <li>
-                <a href="./c_visual.html"> Comunicação visual </a>
-            </li>
-            <li>
-                <a href="./g_rapida.html">Gráfica rápida </a>
-            </li>
-            <li>
-                <a href="./clientes.html">clientes </a>
-            </li>
-            <li>
-                <a href="./contatos.html">contatos</a>
-            </li>
+            <ul class="navbar__links">
+                <li>
+                 <a href="./c_visual.html"> Comunicação visual </a>
+                </li>
+                <li>
+                    <a href="./g_rapida.html">Gráfica rápida </a>
+                </li>
+                <li>
+                    <a href="./clientes.html">clientes </a>
+                </li>
+                <li>
+                    <a href="./contatos.html">contatos</a>
+                </li>
             
-        </ul>
+            </ul>
+            <button class="navbar__menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+      
+        </div>    
     </nav>
 
     <header>
-        <div id="slider">
+        <div class="slider">
             <div class="slide"> 
                 <img class="slide__background-image" src="./images/banner.png" alt="infografica banner" />
 
                 <div class="slide__copy">
-                <h6><span class="copy--primary"> Dê + vida</span> as suas impressões</h6>
-                <h2><span class="copy--primary"> Qualidade</span> <br>& Confiança</h2>
-                <button class="btn--slide">Saiba Mais</button>
+                    <div class="slide__copy__container">
+                        <h6><span class="copy--primary"> Dê + vida</span> as suas impressões!</h6>
+                        <h2><span class="copy--primary"> Qualidade</span> <br>& Confiança</h2>
+                        <button class="btn--slide">Saiba Mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slide"> 
+                <img class="slide__background-image" src="./images/banner2.jpg" alt="infografica banner" />
+
+                <!-- <div class="slide__copy"> -->
+                    <!-- <div class="slide__copy__container"> -->
+                        <!-- <h6><span class="copy--primary">Dê + vida</span> as suas impressões</h6> -->
+                        <!-- <h2><span class="copy--primary">Super</span> <br>Descontos</h2> -->
+                        <!-- <button class="btn--slide">Saiba Mais</button> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            </div>
+        
+            <div class="slide"> 
+                <img class="slide__background-image" src="./images/banner3.jpg" alt="infografica banner" />
+
+                <div class="slide__copy">
+                    <div class="slide__copy__container">
+                        <h6><span class="copy--primary">vende +</span> quem divulga!</h6>
+                        <h2><span class="copy--primary">super</span> <br>descontos</h2>
+                        <button class="btn--slide">Saiba Mais</button>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section id="counter">
+        <section id="counter" class="counter">
             <ul class="container counter__container">
                 <li> 
-                    <h3>+ de 1000 </h3>
+                    <h3> + de <span class="counter__number">500</span> 
                     <small>Parcerias em eventos</small>
+                    </h3>
                 </li>
                 <li> 
-                    <h3>+ de 50.000 </h3>
-                    <small>Serviços concluidos em todo RN</small> 
+                    <h3> + de <span class="counter__number">10000</span>  
+                    <small>Serviços realizados no RN</small> 
+                    </h3>
                 </li>
                 <li>
-                    <h3>+ de 300 </h3>
+                    <h3> + de <span class="counter__number">300</span> 
                     <small>Empresas atendidas</small>
+                    </h3>
                 </li>
             </ul>
         </section>
@@ -86,7 +122,7 @@
                 <h6>
                     Você informa a temática e nós criamos toda parte gráfica e de Comunicação visual do seu evento com tecnologia e inovação
                 </h6>
-                <h2> <span class="quote--primary"> Muito + </span>Qualidade</h2>
+                <h2> <span class="copy--primary"> Muito + </span>Qualidade</h2>
                 <button class="btn--quote"> Fazer Cotação</button>
                 </div>
             </div>
@@ -101,21 +137,21 @@
             </h2>
                       
             <form class="footer__form">
-                <label for="email">Receba novidades e promoções</label>
+                <label for="email">Receba<br>Novidades & Promoções</label>
                     <div class="footer__email">
-                        <input type="email" placeholder="Email"/>
-                        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                        <input id="email" type="email" placeholder="Email"/>
+                        <button classe="footer__form-button" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
                     </div>
                
             </form>          
             <ul class="footer__social">
                 <li>
-                    <a href="https//facebook.com/" target="_blank"> 
-                        <i class="fa-brands fa-facebook fa-2x"></i> 
+                    <a href="https://wa.link/5l5w72" target="_blank"> 
+                        <i class="fab fa-whatsapp fa-2x"></i> 
                     </a>
                 </li>
                 <li>
-                    <a href="https//instagram.com/" target="_blank">
+                    <a href="https://www.instagram.com/inforgrafica_rn/" target="_blank">
                         <i class="fa-brands fa-instagram fa-2x"></i>
                     </a>
                 </li>
@@ -128,7 +164,12 @@
         </p>
        
     </footer>
-    
+    <!-- <script src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <!-- <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>     -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
 

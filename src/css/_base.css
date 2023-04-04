@@ -7,8 +7,8 @@
     --corMain: #fceb00;
     --corTexts: #ffffff;
     --corLinks: antiquewhite;
-    --corBtn:#57297e;
-    --corBackground: linear-gradient(260deg, #9c1abc 0, #7815aa 25%, #530e94 50%, #2c077d 75%, #000468 100%);
+    --corBtn:#391f99;
+    --corBackground: linear-gradient(260deg, #3d1abc 0, #4915aa 25%, #3d0e94 50%, #2c077d 75%, #000468 100%);
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     background-image: var(--corBackground);
@@ -19,9 +19,17 @@ body {
     padding-top: 7.75rem;
 }
 
+header,
+main,
+footer{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+
 .container {
     max-width: 1140px;
-    margin: 0 auto;
+    margin: 0;
 }
 ul{
     display: flex;
