@@ -1,3 +1,4 @@
+/* --------------------------CONFIGURAÇÕES GERAIS------------------------------ */
 .footer{
     background-color: var(--corCabecalhoRodape);
     color: var(--corLinks);
@@ -12,13 +13,6 @@
     border-bottom: 0.1rem solid #fff3;
     padding: 3rem 0;
 }
-@media screen and (min-width: 1280px) {
-    .footer__container {
-      grid-template-columns: repeat(3, auto);
-      grid-template-rows: unset;
-      padding: 2.5rem 0;
-    }
-}  
 .footer .logo-rodape{
     justify-self: start;
     margin: 0;
@@ -29,51 +23,32 @@
     top: 1.5rem ;
     left: 1vw;   
 }
-@media screen and (min-width: 1280px) {
-    .footer .logo-rodape {
-      justify-self: start;
-    }
-  }
-  
 .footer__form{
     display: grid;
     grid-template-columns: unset;
     gap: 5.575rem;
     align-items: center; 
 }
-@media screen and (min-width: 1280px) {
-    .footer__form {
-      grid-template-columns: 9ch auto;
-    }
-  }
 .footer__form label{
     display: grid;
-    grid-template-columns: 11rem;
     font-size: 0.875rem;
     font-weight: 500;
-    line-height: 1.3rem;
+    line-height: 1.2rem;
 }
-.footer__email{
+.footer__form__email{
     display: grid;
-    grid-template-columns: auto 3.375rem;
+
 }
-@media screen and (min-width: 1280px) {
-    .footer__form__email {
-      padding: 0;
-    }
-  }
 .footer__form input{
     background-color: var(--corMain);
     border: unset;
     padding: 0.75rem;
     font-size: 0.875rem;
     font-weight: 700;
-    /* text-transform: uppercase; */
     color: var(--cor-primary);
 }
 .footer__form input::placeholder{
-    color: rgba(0, 0, 0, 0.3);
-    
+    color: rgba(0, 0, 0, 0.3);   
 }
 .footer__form button{
     border: unset;
@@ -81,7 +56,6 @@
     cursor: pointer;
     transition: 0.3s all ease;
     width: 3rem;  
-
 }
 .footer__form button:hover{
     background-color: var(--cor-primary);
@@ -93,12 +67,6 @@
     gap: 0.5rem;
     justify-self: center;  
 }
-@media screen and (min-width: 1280px) {
-    .footer__social {
-      justify-self: end;
-    }
-}  
-
 .footer__social a,
 .footer__social a:hover,
 .footer__social a:visited {
@@ -109,3 +77,106 @@
 .footer p{
     margin: 0.5rem 0;
 }
+
+/* --------------------------MOBILE(320PX)------------------------------ */
+
+@media screen and (min-width: 320px) {
+    
+    .footer{
+        padding: 0 2.9rem;
+    }
+
+    .footer__container {
+        grid-template-rows: 11rem;
+        padding: 0;
+        justify-items: stretch;
+        align-items: start;   
+    }
+
+    .footer .logo-rodape {
+        margin-bottom: -5rem;
+        
+    }
+    .logo-rodape{
+        left: 1vw;
+        top: 1.5rem ;
+    }
+    .footer__form label {
+        grid-template-columns: 19rem
+    }
+
+    .footer__form__email {
+        margin-top: -7rem;
+        grid-template-columns: auto 5rem;
+    }
+    .footer__social {
+        display: flex;
+        gap: -0.5rem;
+        margin-top: 0.2rem;
+        margin-left: -1rem;
+    }
+}
+
+/* --------------------------TABLET(720PX)------------------------------ */
+@media screen and (min-width: 720px) {
+    .footer__container {
+        grid-template-rows: 11rem;
+        padding: 1rem;
+        justify-items: center;
+    }
+    .footer .logo-rodape {
+        padding-left: 2rem;
+    }
+
+    .footer__form__email {
+        margin-top: -7rem;
+        grid-template-columns: auto 2rem;
+    }
+    .footer__social {
+        margin-top: -0.8rem;
+        margin-left: 0rem;
+    }
+}
+/* --------------------------LAPTOP(1080PX & 1380PX)DESKTOP------------------------------ */
+
+@media screen and (min-width: 1280px) {
+    .footer__container {
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: unset;
+      padding: 2.5rem 0;
+      align-items: center; 
+    }
+
+    .footer .logo-rodape {
+        justify-self: start;
+        margin-bottom: 0rem;
+    }
+ 
+    .footer__form {
+        grid-template-columns: 9ch auto;
+        align-items: end;
+        justify-items: stretch;
+        }
+    .footer__form label{
+        grid-template-columns: 11rem;
+      }
+
+    .footer__form__email {
+        margin-top: -6rem;
+        grid-template-columns: auto 3.375rem;
+        padding: 0;
+    }
+
+    .footer__social {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 0.5rem;  
+        margin-top: 1.2rem;
+        margin-left: -1rem;
+        justify-self: end; 
+    }
+}
+
+
+
+

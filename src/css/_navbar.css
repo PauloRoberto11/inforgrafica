@@ -1,10 +1,11 @@
+/* --------------------------CONFIGURAÇÕES GERAIS------------------------------ */
 .navbar {
   position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--corBtn);
+  background-color: var(--corBackground);
   color: var(--corTexts);
 }
 .navbar__container {
@@ -20,12 +21,6 @@
 .navbar__links {
   display: none;
   justify-self: end;
-}
-
-@media screen and (min-width: 1380px) {
-  .navbar__links {
-    display: flex;
-  }
 }
 .navbar__links.active {
   display: grid;
@@ -47,13 +42,6 @@
   font-size: 0.875rem;
   margin-right: 2rem;
   text-transform: uppercase;
-}
-@media screen and (min-width: 1380px) {
-  .navbar__links li {
-    font-size: 0.875rem;
-    margin-right: 3rem;
-    text-transform: uppercase;
-  }
 }
 .navbar__links a {
   color: var(--corLinks);
@@ -83,7 +71,27 @@
   align-self: start;
   margin-top: 2rem;
 }
+/* --------------------------MOBILE(320PX)------------------------------ */
+@media screen and (min-width: 320px) {
+  .navbar__container {
+    width: 91vw;
+  }
+}
+/* --------------------------TABLET(720PX)------------------------------ */
+/* --------------------------DESKTOP(1080PX & 1380PX)------------------------------ */
 
+@media screen and (min-width: 1380px) {
+  .navbar__links {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .navbar__links li {
+    font-size: 0.875rem;
+    margin-right: 3rem;
+    text-transform: uppercase;
+  }
+}
 @media screen and (min-width: 1380px) {
   .navbar__menu-btn {
     display: none;

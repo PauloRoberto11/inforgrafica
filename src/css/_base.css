@@ -1,44 +1,75 @@
+/* --------------------------CONFIGURAÇÕES GERAIS------------------------------ */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-    --cor-primary: #000;
-    --corMain: #fceb00;
-    --corTexts: #ffffff;
-    --corLinks: antiquewhite;
-    --corBtn:#391f99;
-    --corBackground: linear-gradient(260deg, #3d1abc 0, #4915aa 25%, #3d0e94 50%, #2c077d 75%, #000468 100%);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    background-image: var(--corBackground);
-
+  --cor-primary: #000;
+  --corMain: #fceb00;
+  --corTexts: #ffffff;
+  --corLinks: antiquewhite;
+  --corBtn:#08032c;
+  --corBackground: linear-gradient(348deg, rgba(20,115,186,1) 1%, rgba(3,7,46,1) 7%, rgba(3,7,46,1) 26%, rgba(20,115,186,0.9444152661064426) 40%, rgba(3,7,46,1) 54%, rgba(3,7,46,1) 97%, rgba(20,115,186,1) 99%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background-image: var(--corBackground);
 }
 body {
-    margin: 0;
-    padding-top: 7.75rem;
+  margin: 0;
+  padding-top: 7.75rem;
 }
 
 header,
 main,
 footer{
-    overflow-x: hidden;
-    overflow-y: hidden;
-    
-}
-
-.container {
-    max-width: 1140px;
-    margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  
 }
 ul{
-    display: flex;
-    list-style: none;
-    padding-left: 0;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
 }
+
 .logo-infografica {
-    height: 80px;
-    position: absolute; 
-    top: 1.5rem ;
-    left: 1vw;    
- }
+  z-index: 10;
+  height: 80px;
+  position: absolute; 
+  top: 1.5rem ;
+  left: 3rem;    
+}
+
+/* --------------------------MOBILE(320PX)------------------------------ */
+
+@media screen and (min-width: 320px) {
+  :root {
+    font-family: "Montserrat", sans-serif;
+    font-size: 4.25vw;
+    color: var(--colorTexts);
+  }
+}
+@media screen and (min-width: 320px) {
+  .logo-infografica {
+    height: 65px;   
+    left: 8vw;    
+  }
+}
+/* --------------------------TABLET(720PX)------------------------------ */
+
+@media screen and (min-width: 720px) {
+  :root {
+    font-size: 2.25vw;
+  }
+}
+
+/* --------------------------DESKTOP(1080PX & 1380PX )------------------------------ */
+
+  @media screen and (min-width: 1380px) {
+    :root {
+      font-size: 16px;
+    }
+  }
+  .logo-infografica {
+    left: 3rem;    
+  }

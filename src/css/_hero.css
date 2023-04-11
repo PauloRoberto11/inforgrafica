@@ -1,3 +1,4 @@
+/* --------------------------CONFIGURAÇÕES GERAIS------------------------------ */
 .hero{
     position: relative;
     height: 60vh;
@@ -19,16 +20,6 @@
     bottom: 0rem;
     right: 37rem;
     width: 55%;
-    
-}
-@media screen and (min-width: 1380px) {
-    .hero__copy {
-        position: absolute;
-        bottom: 0;
-        right: 39rem;
-        width: 75%;
-        
-    }
 }
 .hero__copy h2{
     margin: 0;
@@ -37,14 +28,6 @@
     line-height: 7.5rem;
     letter-spacing: -0.3125rem;
     color: var(--corMain);
-    
-}
-@media screen and (min-width: 1380px) {
-    .hero__copy h2{
-        
-        margin-bottom: 2rem;
-        font-size: 6rem;
-    }
 }
 .hero__copy p{
     margin: 0;
@@ -55,7 +38,29 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color:var(--cor-primary); 
 }
-@media screen and (min-width: 1380px) {
+/* --------------------------MOBILE(480PX)------------------------------ */
+/* --------------------------TABLET(720PX)------------------------------ */
+/* --------------------------DESKTOP(1080PX)------------------------------ */
+
+@media screen and (min-width: 1080px) {
+    .hero__copy {
+        position: absolute;
+        bottom: 0;
+        right: 39rem;
+        width: 75%;
+        
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .hero__copy h2{
+        
+        margin-bottom: 2rem;
+        font-size: 6rem;
+    }
+}
+
+@media screen and (min-width: 1080px) {
     .hero__copy p{
     font-size: 1.1375rem;
     line-height: 1.875rem;

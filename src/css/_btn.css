@@ -1,3 +1,4 @@
+/* --------------------------CONFIGURAÇÕES GERAIS------------------------------ */
 .btn--slide{ 
     cursor: pointer;
     padding: 0.7rem 1rem;
@@ -5,11 +6,11 @@
     border-radius: 2rem;
     color: var(--corBtn);
     background: var(--corMain);
-    font-size: 0.6375rem;
-    font-weight: 600;
+    font-size: 0.8375rem;
+    font-weight: 700;
     text-transform: uppercase;
     transition: 0.3s all ease;
-   
+    margin-left: 80vw;   
 }
 .btn--slide:hover,
 .btn:active,
@@ -19,7 +20,28 @@
     background: unset;
     box-shadow: 0 1rem 1rem var(--corTexts); 
 }
-.btn{
+.btn--slide1{ 
+    cursor: pointer;
+    padding: 0.7rem 1rem;
+    border: 0.125rem solid var(--corMain);
+    border-radius: 2rem;
+    color: var(--corBtn);
+    background: var(--corMain);
+    font-size: 0.8375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s all ease;
+    margin-left: 80vw;   
+}
+.btn--slide1:hover,
+.btn:active,
+.btn:focus {
+    color: var(--corlinks);
+    border-color: var(--corTexts);
+    background: unset;
+    box-shadow: 0 1rem 1rem var(--corTexts); 
+}
+.btn--institutional{
     cursor: pointer;
     padding: 1rem 1.5rem;
     border: 0.125rem solid  var(--corBtn);
@@ -32,7 +54,7 @@
     transition: 0.3s all ease;
 
 }
-.btn:hover,
+.btn--institutional:hover,
 .btn:active,
 .btn:focus {
     border-color:var(--corTexts);
@@ -40,26 +62,18 @@
     color: var(--corTexts);
     box-shadow: 0 1rem 1rem var(--corTexts);
 }
-.btn--slide,
 .btn--quote{
     display: block;
     margin: 0 auto;
 }
-@media screen and (min-width: 1380px) {
-    /* .btn--slide, */
-    .btn--quote {
-      display: inline;
-    }
-  }
-  
 .btn--quote{ 
     cursor: pointer;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.2rem;
     border: 0.125rem solid  var(--corMain);;
     border-radius: 2rem;
     color: var(--cor-primary);
     background: var(--corMain);
-    font-size: 0.8375rem;
+    font-size: 0.7rem;
     font-weight: 600;
     text-transform: uppercase;
     transition: 0.3s all ease;
@@ -71,4 +85,80 @@
     border-color: var(--cor-primary);
     background-color: unset;
     box-shadow: 0 1rem 1rem #0005; 
+}
+/* --------------------------MOBILE(320PX)------------------------------ */
+@media screen and (min-width: 320px) {
+    .btn--slide{ 
+        font-size: 0.5675rem;
+        margin-left: 7rem;   
+    }
+    .btn--slide1{ 
+        font-size: 0.5675rem;
+        margin-left: 10.7rem;   
+    }
+    .btn--institutional{
+        padding: 0.7rem 1rem;
+    }
+
+    .btn--quote {
+        padding: 0.5rem 0.5rem;
+        font-size: 0.6rem;
+    }
+}
+/* --------------------------TABLET(720PX)------------------------------ */
+@media screen and (min-width: 720px) {
+    .btn--slide{ 
+        font-size: 0.7875rem;
+        margin-left: 10rem;   
+    }
+    .btn--slide1{ 
+        font-size: 0.7875rem;
+        margin-left: 14rem;   
+    }
+    .btn--institutional {
+        padding: 0.8rem 1rem;
+    }
+    .btn--quote {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.8rem;
+    }
+}
+/* --------------------------DESKTOP(1080PX)------------------------------ */
+@media screen and (min-width: 1080px) {
+    .btn--slide{
+       margin-left: 35rem; 
+       margin-top: 3.5rem;
+    }
+
+}
+@media screen and (min-width: 1080px) {
+    .btn--quote {
+      display: inline;
+    }
+}
+
+/* --------------------------DESKTOP(1380PX)------------------------------ */
+
+@media screen and (min-width: 1380px) {
+    .btn--slide{
+       font-size: 0.8rem;
+       margin-left: 50rem; 
+       margin-top: 3rem;
+    }
+    .btn--slide1{
+        font-size: 0.8rem;
+        margin-left: 50rem; 
+        margin-top: 3rem;
+     }
+    .btn--institutional{
+        margin-left: 1rem;
+        padding: 0.7rem 1rem;
+    }
+    .btn--quote {
+      display: inline;
+      cursor: pointer;
+      padding: 1rem 1.2rem;
+      font-size: 0.7rem;
+        
+    }
 }
