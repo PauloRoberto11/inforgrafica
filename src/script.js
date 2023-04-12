@@ -48,7 +48,7 @@ $(document).ready(() => {
         Body: `Olá,
         
         Eu gostaria de ser adicionado na newsletter do site.
-        Meu email Ã© ${email}.
+        Meu email é ${email}.
         
         Obrigado!
         `,

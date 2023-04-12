@@ -202,6 +202,7 @@
 .quote__copy h2 span{
   display: block;
 }
+
 /* --------------------------MOBILE(320PX)------------------------------ */
 
 @media screen and (min-width: 320px) {
@@ -257,9 +258,6 @@
     text-align: center;
   }
 
-  .institutional__image {
-    max-width: 390px;
-  }
   .institutional__copy h6{
     font-size: 0.775rem;
   }
@@ -303,7 +301,23 @@
     line-height: 2.5rem;
   }
 }
-/* --------------------------TABLET(720PX)------------------------------ */
+
+/* --------------------------MOBILE(410PX)------------------------------ */
+@media screen and (min-width: 410px) {
+ 
+  .quote__container {
+    min-height: 75vh;
+    
+} 
+}
+/* --------------------------TABLET/IPAD(540PX)------------------------------ */
+@media screen and (min-width: 540px) {
+
+  .institutional__copy {
+    margin-left: 1rem;
+}
+} 
+/* --------------------------TABLET/IPAD(720PX)------------------------------ */
 
 @media screen and (min-width: 720px) {
   .slide__copy {
@@ -357,7 +371,10 @@
     
   }
   .institutional__image {
-    max-width: 380px;
+    max-width: 460px;
+  }
+  .institutional__copy {
+    padding: 0 1rem 1.875rem 0;
   }
   .institutional__copy h6 {
     font-size: 0.9rem;
@@ -369,10 +386,12 @@
   .quote__container {
     justify-items: end;
     padding: 1rem;
+    min-height: 66vh
 }
   .quote__copy{
     padding: 1.5rem 1.5rem 1.5rem 1.5rem;
     margin-top: -15rem;
+    margin-right: 4rem;
   }
   .quote__copy h6 {
     font-size: 0.9975rem;
@@ -384,44 +403,218 @@
     line-height: 3rem;
   }
 }
-
-/* --------------------------DESKTOP(1080PX)------------------------------ */
-
-@media screen and (min-width: 1080px) {
+/* --------------------------LAPTOP(1024PX)------------------------------ */
+@media screen and (min-width: 1024px) {
   .slick-arrow {
     visibility: visible;
   }
  
   .slide__copy {
     margin:0;
-    padding-left: 35vh;
+    top: 0rem;
+    padding-left: 36vh;
+  }
+
+  .slide__copy h6 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-left: 26.6rem;
+    margin-top: -10.5rem;
+    margin-bottom: -6.5rem;
+  }
+
+  .slide__copy h2 {
+    display:grid;
+    font-size: 3rem;
+    line-height: 1.3rem;
+    text-transform: uppercase;
+    margin-top: 5.5rem;
+    margin-bottom: -5.5rem;
+    justify-items: start;
+  }
+  .slide__copy span {
+    display: inline;
+  }
+
+  .slide__copy1 {
+    margin:0;
+    top: -2rem;
+    padding-left: 30vh;
+  }
+
+  .slide__copy1 h6 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-left: 23.6rem;
+    margin-top: -6.5rem;
+    margin-bottom: -6.5rem;
+  }
+
+  .slide__copy1 h2 {
+    display:grid;
+    font-size: 3rem;
+    line-height: 1.3rem;
+    text-transform: uppercase;
+    margin-top: 5.5rem;
+    margin-bottom: -5.5rem;
+    justify-items: start;
+    padding-left: 0;
+  }
+  .slide__copy1 span {
+    display: inline;
+  }
+  .counter__container {
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); 
+  }
+
+  .institutional {
+    display: grid;
+    grid-template-columns: auto 500px;
+    padding: 4.375rem;
     
+  }
+
+  .institutional__image {
+    max-width: 460px;
+  }
+
+  .institutional__copy {
+    padding: 0 1.875rem; 
+  }
+
+  .institutional__copy h6 {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 1.8rem;
+  }
+
+  .institutional__copy h4{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: var(--corMain);
+    text-transform: uppercase;
+  }
+  .institutional p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6875rem;
+    margin-left: 2.67rem;
+    margin-bottom: 0rem;
+    padding: 0 2rem 1rem 0;
+ 
+  }
+  
+  .quote__container {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    min-height: 170vh;
+  }
+  .quote {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .quote__copy {
+    padding: 5.625rem 4.375rem;
+    margin-top: -5rem;
+    padding-bottom: 4rem;
+
+  }
+
+  .quote__copy h6 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.1875rem;
+    line-height: 1.4375rem;
+    max-width: 53ch;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .quote__copy h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    letter-spacing: -0.1875rem;
+    margin: 1.875rem 0;
+
+  }
+}
+/* --------------------------DESTOP(1280PX)------------------------------ */
+
+@media screen and (min-width: 1280px) {
+  .slick-arrow {
+    visibility: visible;
+  }
+ 
+  .slide__copy {
+    margin:0;
+    top: 0rem;
+    padding-left: 27vh;
   }
 
   .slide__copy h6 {
     font-size: 1rem;
     font-weight: 400;
-    padding-left: 37rem;
-    margin-top: -12rem;
-    margin-bottom: -4.5rem;
+    padding-left: 33.6rem;
+    margin-top: -10.5rem;
+    margin-bottom: -6.5rem;
   }
 
   .slide__copy h2 {
     display:grid;
-    font-size: 3.5rem;
-    line-height: 1.7rem;
+    font-size: 3.7rem;
+    line-height: 1.45rem;
     text-transform: uppercase;
-    margin-top: 3rem;
-    margin-bottom: -6rem;
+    margin-top: 5.5rem;
+    margin-bottom: -5.5rem;
     justify-items: start;
   }
-
   .slide__copy span {
     display: inline;
   }
+
+  .slide__copy1 {
+    margin:0;
+    top: -2rem;
+    padding-left: 32vh;
+  }
+
+  .slide__copy1 h6 {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: 30rem;
+    margin-top: -6.5rem;
+    margin-bottom: -6.5rem;
+  }
+
+  .slide__copy1 h2 {
+    display:grid;
+    font-size: 3.7rem;
+    line-height: 1.45rem;
+    text-transform: uppercase;
+    margin-top: 5.5rem;
+    margin-bottom: -5.5rem;
+    justify-items: start;
+    padding-left: 0;
+  }
+  .slide__copy1 span {
+    display: inline;
+  }
+  .counter__container {
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); 
+  }
+
   .institutional {
-    grid-template-columns: auto auto;
+    display: grid;
+    grid-template-columns: auto 600px;
     padding: 4.375rem;
+    align-items: center;
   }
 
   .institutional__image {
@@ -429,31 +622,72 @@
   }
 
   .institutional__copy {
-    padding: 0rem 1.875rem; 
+    padding: 0 1.875rem; 
+  }
+
+  .institutional__copy h6 {
+    font-size: 1.5625rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin: 0;
   }
 
   .institutional__copy h4{
-    font-size: 1.5625rem;
+    font-size: 1.175rem;
     margin-top: 1rem;
+    margin-left: 1rem;
     color: var(--corMain);
     text-transform: uppercase;
   }
-
+  .institutional p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6875rem;
+    margin-left: 2.67rem;
+    margin-bottom: 2.5rem;
+    padding: 0 2rem 1rem 0;
+ 
+  }
+  
+  .quote__container {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    min-height: 170vh;
+  }
+  .quote {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
   .quote__copy {
     padding: 5.625rem 4.375rem;
+    margin-top: -5rem;
+    padding-bottom: 4rem;
+
   }
 
   .quote__copy h6 {
-    font-size: 0.9375rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.1875rem;
+    line-height: 1.4375rem;
+    max-width: 53ch;
+    text-transform: uppercase;
+    margin: 0;
   }
 
   .quote__copy h2 {
-    font-size: 5rem;
-    line-height: 4.3rem;
-    margin: 3.875rem 0;
+    font-size: 4rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    letter-spacing: -0.1875rem;
+    margin: 1.875rem 0;
+
   }
 }
-/* --------------------------DESKTOP(1380PX)------------------------------ */
+/* --------------------------DESKTOP/TV(1380PX)------------------------------ */
 
 @media screen and (min-width: 1380px) {
   .slick-arrow {
@@ -512,9 +746,14 @@
   .slide__copy1 span {
     display: inline;
   }
+  .counter__container {
+    
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); 
+  }
 
   .institutional {
-    grid-template-columns: auto 610px;
+    display: grid;
+    grid-template-columns: auto 650px;
     padding: 4.375rem;
     align-items: center;
   }
@@ -528,7 +767,7 @@
   }
 
   .institutional__copy h6 {
-    font-size: 1.175rem;
+    font-size: 1.6rem;
     font-weight: 300;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
@@ -544,11 +783,11 @@
   }
   .institutional p {
     font-family: "Roboto", sans-serif;
-    font-size: 1.0625rem;
+    font-size: 1.1625rem;
     line-height: 1.6875rem;
     margin-left: 2.67rem;
     margin-bottom: 2.5rem;
-    padding: 0 2rem 1rem 0;
+    padding: 0 4rem 1rem 0;
  
   }
   

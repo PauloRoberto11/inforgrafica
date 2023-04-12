@@ -123,26 +123,55 @@
         font-size: 0.8rem;
     }
 }
-/* --------------------------DESKTOP(1080PX)------------------------------ */
-@media screen and (min-width: 1080px) {
+/* --------------------------LAPTOP(1024PX)------------------------------ */
+@media screen and (min-width: 1024px) {
     .btn--slide{
-       margin-left: 35rem; 
-       margin-top: 3.5rem;
+       font-size: 0.6rem;
+       margin-left: 32.6rem; 
+       padding: 0.5rem 0.7rem;
+       margin-top: 3.4rem;
     }
 
+    .btn--slide1 {
+        font-size: 0.6875rem;
+        margin-left: 30rem;
+        padding: 0.5rem 0.6rem;
+        margin-top: 3.4rem;
+    }
+    .btn--institutional {
+        padding: 0.65rem 1rem;
+       
+    }
+    .btn--quote {
+      display: inline;
+    }
 }
-@media screen and (min-width: 1080px) {
+/* --------------------------DESKTOP(1280PX)------------------------------ */
+@media screen and (min-width: 1280px) {
+    .btn--slide{
+       font-size: 0.6875rem;
+       margin-left: 41rem; 
+       padding: 0.5rem 0.6rem;
+       margin-top: 3.4rem;
+    }
+
+    .btn--slide1 {
+        font-size: 0.6875rem;
+        margin-left: 37rem;
+        padding: 0.5rem 0.6rem;
+        margin-top: 3.4rem;
+    }
     .btn--quote {
       display: inline;
     }
 }
 
-/* --------------------------DESKTOP(1380PX)------------------------------ */
+/* --------------------------DESKTOP/TV(1380PX)------------------------------ */
 
 @media screen and (min-width: 1380px) {
     .btn--slide{
        font-size: 0.8rem;
-       margin-left: 50rem; 
+       margin-left: 59rem; 
        margin-top: 3rem;
     }
     .btn--slide1{
